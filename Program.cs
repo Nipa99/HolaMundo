@@ -6,40 +6,7 @@ class Program
     static void Main(string[] args)
     {
 
-        string hola = "Hola Mundo en Arcoiris!\n";
-        string hello = "Hello world as a rainbow!";
-        ConsoleColor[] colores = new ConsoleColor[]
-        {
-            ConsoleColor.Red,
-            ConsoleColor.Yellow,
-            ConsoleColor.Green,
-            ConsoleColor.Cyan,
-            ConsoleColor.Blue,
-            ConsoleColor.Magenta
-        };
-
-        for (int i = 0; i < hola.Length; i++)
-        {
-            Console.ForegroundColor = colores[i % colores.Length];
-            Console.Write(hola[i]);
-        }
-
-
-        ConsoleColor[] colors = new ConsoleColor[]
-        {
-            ConsoleColor.Cyan,
-            ConsoleColor.Blue,
-            ConsoleColor.Magenta,
-            ConsoleColor.Red,
-            ConsoleColor.Yellow,
-            ConsoleColor.Green
-        };
-
-        for (int i = 0; i < hello.Length; i++)
-        {
-            Console.ForegroundColor = colors[i % colors.Length];
-            Console.Write(hello[i]);
-        }
+        Console.Write("Adios mundo");
 
         Console.ReadLine(); // Para que la consola no se cierre inmediatamente
     }
