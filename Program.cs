@@ -6,15 +6,40 @@ class Program
     static void Main(string[] args)
     {
 
-                // Cambiar color de fondo y texto
-        Console.BackgroundColor = ConsoleColor.DarkBlue;
-        Console.ForegroundColor = ConsoleColor.Yellow;
+        string hola = "Hola Mundo en Arcoiris!\n";
+        string hello = "Hello world as a rainbow!";
+        ConsoleColor[] colores = new ConsoleColor[]
+        {
+            ConsoleColor.Red,
+            ConsoleColor.Yellow,
+            ConsoleColor.Green,
+            ConsoleColor.Cyan,
+            ConsoleColor.Blue,
+            ConsoleColor.Magenta
+        };
 
-        Console.Clear(); // Importante para aplicar el color de fondo en toda la pantalla
-        
-        Console.WriteLine("Hola Mundo!");
-        Console.WriteLine("Hello world");
-        
+        for (int i = 0; i < hola.Length; i++)
+        {
+            Console.ForegroundColor = colores[i % colores.Length];
+            Console.Write(hola[i]);
+        }
+
+
+        ConsoleColor[] colors = new ConsoleColor[]
+        {
+            ConsoleColor.Cyan,
+            ConsoleColor.Blue,
+            ConsoleColor.Magenta,
+            ConsoleColor.Red,
+            ConsoleColor.Yellow,
+            ConsoleColor.Green
+        };
+
+        for (int i = 0; i < hello.Length; i++)
+        {
+            Console.ForegroundColor = colors[i % colors.Length];
+            Console.Write(hello[i]);
+        }
 
         Console.ReadLine(); // Para que la consola no se cierre inmediatamente
     }
