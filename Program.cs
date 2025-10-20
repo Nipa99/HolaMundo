@@ -5,7 +5,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.BackgroundColor = ConsoleColor.DarkBlue;
 
         string hola = "Hola Mundo en Arcoiris!\n";
         string hello = "Hello world as a rainbow!";
